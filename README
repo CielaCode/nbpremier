@@ -1,0 +1,18 @@
+# Projet en Langage C : Vérification de Nombres Premiers
+
+Ce projet implémente un programme en langage C permettant de tester si un nombre donné est un nombre premier. 
+
+Un **nombre premier** est un entier naturel supérieur à 1 qui n'est divisible que par 1 et lui-même. Bien que ce test puisse être réalisé manuellement en effectuant des divisions successives, il devient rapidement fastidieux pour des nombres élevés. C'est ici que l'ordinateur devient particulièrement utile : il peut effectuer ce travail répétitif de manière rapide et efficace.
+
+## Fonctionnalités
+
+- Vérifie si un nombre donné est premier.
+- Permet d'entrer un nombre directement via la ligne de commande.
+
+## Compilation
+
+Pour compiler le programme, utilisez la commande suivante :
+
+```bash
+gcc premier.c -o premier -g
+

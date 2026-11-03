@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE MoniaOrg>
+<program name="premier">
+    <xmoversion>0.38</xmoversion>
+    <header version="0.1" author="BoGt" creation="14/01/2025" update="14/01/2025"></header>
+    <global>
+        <var name="nombre" type="entier" comment="passé en paramètre"/>
+        <var name="cpt" type="entier" comment="entier pouvant aller jusqu'au paramètre"/>
+        <var name="estpremier" type="entier" comment="0 ou 1"/>
+    </global>
+    <function name="main" type="">
+        <inst>
+            <text>nombre passé en paramètre doit etre strictement positif</text>
+        </inst>
+        <inst>
+            <text>est_premier=1</text>
+        </inst>
+        <inst>
+            <text>cpt=2</text>
+        </inst>
+        <while condition="(cpt &lt; nombre) ET est_Premier">
+            <if condition="nombre%cpt = 0">
+                <then>
+                    <inst>
+                        <text>estpremier=0</text>
+                    </inst>
+                </then>
+            </if>
+            <inst>
+                <text>cpt=cpt+1</text>
+            </inst>
+        </while>
+        <if condition="est_premier">
+            <then>
+                <output>
+                    <text>afficher premier</text>
+                </output>
+            </then>
+            <else>
+                <output>
+                    <text>afficher non premier</text>
+                </output>
+            </else>
+        </if>
+    </function>
+</program>
